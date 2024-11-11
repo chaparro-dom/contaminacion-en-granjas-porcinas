@@ -1,0 +1,37 @@
+.card {
+    color: #000000; /* Color de texto negro para coherencia */
+}
+
+.navbar {
+    background-color: #ffffff; /* Color de fondo para la barra de navegación */
+}
+
+.main-footer {
+    background-color: #f8f9fa; /* Color de fondo claro para el pie de página */
+    color: #000000; /* Color de texto negro para contraste */
+}
+
+/* Asegúrate de que los botones y otros elementos también tengan un estilo coherente */
+.btn {
+    background-color: #007bff; /* Color de fondo para los botones en modo claro */
+    color: #ffffff; /* Color de texto blanco para los botones */
+}
+
+.nav-icon.fas.fa-users {
+    color: rgb(73, 89, 230); /* Color de icono amarillo */
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente para llenar el espacio */
+}
+#darkModeToggle {
+    color: yellow; /* Color de texto amarillo para el botón de modo oscuro */
+}
+
+a{
+    font-size: 0.7rem;
+}
+
+
