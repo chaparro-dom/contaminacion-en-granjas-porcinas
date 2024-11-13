@@ -110,7 +110,7 @@ a{
 }
 
 
-<<<<<<< HEAD
+
 /* Loader */
 .loader-container {
     position: fixed;
@@ -156,7 +156,4 @@ a{
     border-radius: 50%;
     animation: loading 1.5s ease-in-out infinite;
 }
-=======
 
-
->>>>>>> af0db750bb4a775d79032fce0cce7a77473bfe55
