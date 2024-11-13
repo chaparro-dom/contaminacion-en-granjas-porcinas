@@ -1,0 +1,93 @@
+.content-wrapper {
+    min-height: calc(100vh - 57px);
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding-bottom: 60px; /* Espacio para el footer */
+}
+
+.card {
+    margin-bottom: 20px;
+    height: 400px; /* Altura fija para todas las tarjetas */
+}
+
+.card-header {
+    height: 60px; /* Altura fija para el encabezado */
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    height: 340px; /* Altura restante para el cuerpo */
+    padding: 15px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.main-footer {
+    flex-shrink: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #dee2e6;
+    padding: 1rem;
+    clear: both;
+}
+
+.contact-item {
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(10px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.hover-effect:hover .contact-icon {
+    transform: scale(1.1);
+}
+
+.bg-pink {
+    background-color: #e1306c;
+}
+
+.hover-zoom {
+    transition: transform 0.3s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    overflow: hidden;
+}
+/* Ajustes para que la imagen ocupe toda la tarjeta */
+.card-body img.hover-zoom {
+    width: 100%;
+    height: 100%;
+    max-height: none !important;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body.d-flex {
+    padding: 0;
+}

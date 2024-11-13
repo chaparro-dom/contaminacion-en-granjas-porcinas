@@ -1,0 +1,157 @@
+.card {
+    color: #000000; /* Color de texto negro para coherencia */
+}
+
+.navbar {
+    background-color: #ffffff; /* Color de fondo para la barra de navegación */
+}
+
+.main-footer {
+    background-color: #f8f9fa; /* Color de fondo claro para el pie de página */
+    color: #000000; /* Color de texto negro para contraste */
+}
+
+/* Asegúrate de que los botones y otros elementos también tengan un estilo coherente */
+.btn {
+    background-color: #007bff; /* Color de fondo para los botones en modo claro */
+    color: #ffffff; /* Color de texto blanco para los botones */
+}
+
+.nav-icon.fas.fa-users {
+    color: rgb(73, 89, 230); /* Color de icono amarillo */
+}
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente para llenar el espacio */
+}
+#darkModeToggle {
+    color: yellow; /* Color de texto amarillo para el botón de modo oscuro */
+}
+
+a{
+    font-size: 0.7rem;
+}
+
+.table {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    position: relative;
+    color: #fff;
+    background: #1a1a1a;
+}
+
+.table th {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    font-weight: 600;
+    border-bottom: 2px solid #00ff9d;
+    color: #00ff9d;
+    text-shadow: 0 0 5px rgba(0,255,157,0.5);
+    padding: 1rem;
+}
+
+.table td {
+    border-color: #333;
+    padding: 1rem;
+}
+
+.table tr {
+    transition: all 0.2s ease;
+}
+
+.table tr:hover {
+    transform: translateX(5px) scale(1.01);
+    background: linear-gradient(90deg, #454444, #4655ff);
+    box-shadow: -5px 0 10px rgba(26, 250, 164, 0.842);
+}
+
+/* Efecto para los precios */
+.table td:nth-child(2) {
+    font-weight: bold;
+    color: #003e26;
+    text-shadow: 0 0 5px rgb(5, 255, 159);
+}
+
+.table td:nth-child(2):before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #005836, transparent);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.table tr:hover td:nth-child(2):before {
+    transform: scaleX(1);
+    
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff9d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc7a;
+}
+
+
+/* Loader */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Cambiado a viewport width */
+    height: 100vh; /* Cambiado a viewport height */
+    background: rgba(255, 255, 255, 0.95); /* Fondo más opaco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999; /* Mayor z-index */
+}
+
+.loader {
+    width: 400px; /* Duplicado el tamaño */
+    height: 400px;
+    background-image: url('img/loader\ 2.gif');
+    background-size: cover; /* Cambiado a cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2); /* Escala adicional */
+}
+
+/* Alternativa con CSS puro */
+@keyframes loading {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.2);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.loader-alt {
+    width: 200px; /* Duplicado el tamaño */
+    height: 200px;
+    border: 12px solid #f3f3f3; /* Borde más grueso */
+    border-top: 12px solid #3498db;
+    border-radius: 50%;
+    animation: loading 1.5s ease-in-out infinite;
+}
